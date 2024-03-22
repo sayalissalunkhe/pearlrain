@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Slider</title>
+    <!-- Add Slick slider CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Custom CSS -->
+    <style>
+        /* CSS for the tab slider */
+        .tab-slider-container {
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .tab {
+            display: inline-block;
+            padding: 10px 20px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            border-bottom: none;
+            background-color: #f2f2f2;
+        }
+
+        .tab.active {
+            background-color: #fff;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* Hide the slider navigation arrows on mobile view */
+        @media screen and (max-width: 768px) {
+            .tab-slider-container {
+                display: none; /* Hide tab-slider-container on mobile */
+            }
+        }
+
+        /* Slick slider container */
+        .slick-slider {
+            display: none; /* Hide slick slider by default */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Tab Navigation -->
+    <div class="tab-slider-container">
+        <div class="tab-slider">
+            <div class="tab">Tab 1</div>
+            <div class="tab">Tab 2</div>
+            <div class="tab">Tab 3</div>
+            <!-- Add more tabs as needed -->
+        </div>
+    </div>
+
+    <!-- Tab Content -->
+    <div class="tab-content">
+        <div class="tab-pane">Content 1</div>
+        <div class="tab-pane">Content 2</div>
+        <div class="tab-pane">Content 3</div>
+        <!-- Add more tab content panes as needed -->
+    </div>
+
+    <!-- Add jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Add Slick slider JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script>
+        $(document).ready(function () {
+            // Function to initialize Slick slider on mobile view
+            function initSlickSlider() {
+                $('.tab-slider').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    dots: false
+                });
+                $('.slick-slider').show(); // Show slick slider
+            }
+
+            // Check if the viewport is mobile and initialize Slick slider for tab titles
+            function checkViewport() {
+                if ($(window).width() <= 768) { // Adjust the breakpoint as needed
+                    initSlickSlider();
+                } else {
+                    $('.slick-slider').hide(); // Hide slick slider
+                }
+            }
+
+            // Call the checkViewport function initially
+            checkViewport();
+
+            // Re-check viewport on window resize
+            $(window).resize(function () {
+                $('.tab-slider').slick('unslick'); // Remove slick slider when resizing
+                checkViewport();
+            });
+
+            // Toggle active tab on tab click
+            $('.tab-slider .tab').click(function () {
+                var tabIndex = $(this).index();
+                $('.tab-slider .tab').removeClass('active'); // Remove active class from all tabs
+                $(this).addClass('active'); // Add active class to the clicked tab
+                $('.tab-content').removeClass('active'); // Remove active class from all content panes
+                $('.tab-content:eq(' + tabIndex + ')').addClass('active'); // Add active class to the corresponding content pane
+            });
+        });
+    </script>
+
+</body>
+</html>
