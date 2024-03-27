@@ -13,6 +13,21 @@ window.addEventListener('DOMContentLoaded', () => {
         });
 });
 
+window.addEventListener('DOMContentLoaded', () => {
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(html => {
+            // Create a temporary div element
+            const tempDiv = document.createElement('div');
+            // Set the HTML content of the temporary div with fetched HTML
+            tempDiv.innerHTML = html;
+            // Get the header content from the temporary div
+            const footerContent = tempDiv.querySelector('footer').innerHTML;
+            // Insert the header content into the #header element
+            document.getElementById('footer').innerHTML = footerContent;
+        });
+});
+
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () { scrollFunction() };
 

@@ -167,7 +167,7 @@ h2.banner-heading-2 {
 }
 
 .home-services-section {
-    background-image: url(../images/services-section-bg.jpg);
+    background-image: url('../images/services-section-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -312,11 +312,11 @@ h2.banner-heading-2 {
 }
 
 .narrative-card.left::before {
-    background-image: url(../images/narratives-1.png);
+    background-image: url('../images/narratives-1.png');
 }
 
 .narrative-card.right::before {
-    background-image: url(../images/narratives-2.png);
+    background-image: url('../images/narratives-2.png');
 }
 
 .card-category {
@@ -481,7 +481,7 @@ h3.card-title {
 }
 
 .cta-section {
-    background-image: url(../images/get-help-bg.jpg);
+    background-image: url('../images/get-help-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -536,7 +536,7 @@ h3.card-title {
 }
 
 .top-footer-section {
-    background-image: url(../images/top-footer-bg.jpg);
+    background-image: url('../images/top-footer-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     /* height: 400px; */
@@ -563,7 +563,7 @@ h3.card-title {
 }
 
 .footer-section {
-    background-image: url(../images/footer-bg.jpg);
+    background-image: url('../images/footer-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -653,18 +653,18 @@ h3.card-title {
     cursor: pointer;
 }
 
-.use-case-section{
+.use-case-section {
     padding: 3rem 0;
 }
 
-.core-comp-section::before{
+.core-comp-section::before {
     content: '';
     position: absolute;
     top: 15%;
     left: 0;
     width: 200px;
     height: 200px;
-    background-image: url(../images/gradient-circle-left.png);
+    background-image: url('../images/gradient-circle-left.png');
     background-size: contain;
     background-repeat: no-repeat;
     z-index: -1;
@@ -677,35 +677,35 @@ h3.card-title {
     right: 0;
     width: 140px;
     height: 300px;
-    background-image: url(../images/compentence-right-icon.png);
+    background-image: url('../images/compentence-right-icon.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right top;
     z-index: -1;
 }
 
-.accordian-section::after{
+.accordian-section::after {
     content: '';
     position: absolute;
     top: 5%;
     right: 0;
     width: 100px;
     height: 150px;
-    background-image: url(../images/gradient-circle-right.png);
+    background-image: url('../images/gradient-circle-right.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right top;
     z-index: -1;
 }
 
-.use-case-section::before{
+.use-case-section::before {
     content: '';
     position: absolute;
     top: -13%;
     left: 0;
     width: 400px;
     height: 640px;
-    background-image: url(../images/narratives-left.png);
+    background-image: url('../images/narratives-left.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right top;
@@ -719,35 +719,35 @@ h3.card-title {
     right: 0;
     width: 290px;
     height: 400px;
-    background-image: url(../images/fade-circle-right.png);
+    background-image: url('../images/fade-circle-right.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right top;
     z-index: -1;
 }
 
-.project-deliver-section::before{
+.project-deliver-section::before {
     content: '';
     position: absolute;
     top: 30%;
     left: 0;
     width: 290px;
     height: 400px;
-    background-image: url(../images/fade-circle-left.png);
+    background-image: url('../images/fade-circle-left.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right top;
     z-index: -1;
 }
 
-.project-deliver-section::after{
+.project-deliver-section::after {
     content: '';
     position: absolute;
     top: 0;
     right: 0;
     width: 200px;
     height: 200px;
-    background-image: url(../images/gradient-circle-right.png);
+    background-image: url('../images/gradient-circle-right.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right top;
@@ -761,28 +761,117 @@ h3.card-title {
     left: 0;
     width: 100px;
     height: 200px;
-    background-image: url(../images/gradient-circle-left.png);
+    background-image: url('../images/gradient-circle-left.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right top;
     z-index: -1;
 }
 
-.home-map-section::after{
+.home-map-section::after {
     content: '';
     position: absolute;
     top: 0;
     right: 0;
     width: 200px;
     height: 200px;
-    background-image: url(../images/fade-circle-right.png);
+    background-image: url('../images/fade-circle-right.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right top;
     z-index: -1;
 }
 
+/* Contact Us Page */
+
+.contact-banner-section {
+    background-image: url('../images/contact-banner-bg.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 5rem 0;
+    margin-top: -1rem;
+}
+
+.contact-banner-content h4 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+a.contact-btn.rounded-btn {
+    font-size: 16px;
+    color: #8B2D88;
+    background: #fff;
+    padding: 8px 20px;
+    margin: 1rem auto;
+    text-decoration: none;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 190px;
+}
+
+.contact-details-card {
+    background-color: #ECEBFA;
+    padding: 3rem 4rem;
+    border-radius: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.contact-card-img {
+    width: 20%;
+}
+
+.contact-card-img img {
+    height: 70px;
+    width: 70px;
+    object-fit: contain;
+}
+
+.contact-card-content {
+    width: 80%;
+    padding-left: 1rem;
+}
+
+h4.card-heading {
+    font-size: 20px;
+    color: #8B2D88;
+}
+
+a.card-link {
+    color: #605FFC;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1026px) {
+    .contact-details-card {
+        padding: 2rem;
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 1025px) {
+    .contact-details-card{
+        padding: 2rem;
+    }
+
+    a.card-link{
+        font-size: 15px;
+    }
+
+    .contact-card-img img{
+        height: 50px;
+        width: 50px;
+    }
+
     .slide-content {
         padding-left: 3rem;
         height: 400px;
@@ -866,6 +955,19 @@ h3.card-title {
 
 
 @media only screen and (max-width: 900px) {
+    h4.card-heading {
+        font-size: 15px;
+    }
+
+    .contact-details-card {
+        padding: 1.5rem;
+        width: 100%;
+    }
+
+    a.card-link {
+        font-size: 13px;
+    }
+
     .blue-rounded-btn {
         font-size: 14px;
     }
@@ -1004,6 +1106,23 @@ h3.card-title {
 
 
 @media only screen and (max-width: 668px) {
+    .contact-details-card{
+        margin-bottom: 2rem;
+    }
+
+    .contact-card-img img {
+        height: auto;
+        width: 100%;
+    }
+
+    .contact-card-img{
+        width: 10%;
+    }
+
+    .contact-card-content{
+        width: 90%;
+    }
+
     .core-comp-section::before {
         width: 100%;
         height: 100px;
@@ -1020,7 +1139,7 @@ h3.card-title {
         top: 0;
     }
 
-    .project-deliver-section::after, 
+    .project-deliver-section::after,
     .home-map-section::before {
         width: 60px;
     }
