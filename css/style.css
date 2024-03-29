@@ -1185,6 +1185,10 @@ a.card-link {
         font-size: 12px;
     }
 
+    .project-deliver-list{
+        width: 100%;
+    }
+
     .project-deliver-list a {
         font-size: 18px;
     }
