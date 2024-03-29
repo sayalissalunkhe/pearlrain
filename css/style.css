@@ -376,7 +376,8 @@ h3.card-title {
     color: #D0CCFF;
     font-weight: 400;
     font-size: 16px;
-    padding-bottom: 1rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
     min-height: 80px;
 }
 
@@ -384,7 +385,9 @@ h3.card-title {
     font-size: 17px;
     padding-bottom: 2rem;
     width: 90%;
-    min-height: 109px;
+    min-height: 133px;
+    display: flex;
+    align-items: center;
 }
 
 .card-btn {
@@ -1071,7 +1074,6 @@ a.card-link {
 
 
 @media only screen and (max-width: 900px) {
-
     .w-33,
     .w-48 {
         width: 48%;
