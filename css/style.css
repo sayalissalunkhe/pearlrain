@@ -346,6 +346,7 @@ h2.banner-heading-2 {
     background: radial-gradient(circle, #824191 0%, rgba(30, 34, 119, 1) 100%);
     width: fit-content;
     padding: 10px 7px 7px 30px;
+    padding: 15px 30px;
     border-radius: 0 40px 40px 50px;
     display: flex;
     justify-content: space-between;
@@ -522,6 +523,11 @@ h3.card-title {
     color: #fff;
     padding-left: 1.5rem;
     font-weight: 600;
+}
+
+img.member-img {
+    width: 90%;
+    margin: auto;
 }
 
 .member-name {
