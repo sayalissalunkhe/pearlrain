@@ -55,6 +55,25 @@ $(document).ready(function () {
         arrows: false
     });
 
+    $('.narrative-slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 2,
+        arrows: true,
+        prevArrow: '<img class="custom-arrow custom-prev" src="../images/prev-icon.png">',
+        nextArrow: '<img class="custom-arrow custom-next" src="../images/nex-icon.png">',
+        responsive: [
+            {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
     // $('.nav.nav-tabs').slick({
     //     dots: false,
     //     slidesToShow: 1,

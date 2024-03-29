@@ -8,6 +8,14 @@
     width: 80%;
 }
 
+.w-33 {
+    width: 32%;
+}
+
+.w-48 {
+    width: 49%;
+}
+
 .navbar-brand {
     padding: 0;
     display: block;
@@ -184,7 +192,8 @@ h2.banner-heading-2 {
     font-weight: bold;
     color: #4E5AC3;
     padding-bottom: 0.7rem;
-    line-height: 1.6;
+    line-height: 1.5;
+    min-height: 90px;
 }
 
 .service-card p {
@@ -290,6 +299,10 @@ h2.banner-heading-2 {
     display: block;
 }
 
+.narrative-slider{
+    margin: 2rem 0;
+}
+
 .narrative-card {
     background-color: #1D1945;
     border-radius: 12px;
@@ -297,6 +310,8 @@ h2.banner-heading-2 {
     padding: 0 1.5rem 1.5rem;
     position: relative;
     z-index: 1;
+    width: 98%;
+    margin: auto;
 }
 
 .narrative-card::before {
@@ -311,12 +326,20 @@ h2.banner-heading-2 {
     z-index: -1;
 }
 
-.narrative-card.left::before {
+.narrative-card.first::before {
     background-image: url('../images/narratives-1.png');
 }
 
-.narrative-card.right::before {
+.narrative-card.second::before {
     background-image: url('../images/narratives-2.png');
+}
+
+.narrative-card.third::before { 
+    background-image: url('../images/narratives-3.png');
+    background-size: contain;
+    background-position: top right;
+    bottom: unset;
+    top: 0;
 }
 
 .card-category {
@@ -352,17 +375,24 @@ h3.card-title {
     color: #D0CCFF;
     font-weight: 400;
     font-size: 16px;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
+    min-height: 80px;
 }
 
 .card-exceprt {
-    font-size: 18px;
+    font-size: 17px;
     padding-bottom: 2rem;
-    width: 70%;
+    width: 90%;
+    min-height: 109px;
 }
 
 .card-btn {
     margin-bottom: 2rem;
+}
+
+.narrative-slider .slick-prev, .narrative-slider .custom-arrow{
+    top: -70px;
+    bottom: unset;
 }
 
 .project-deliver-container {
@@ -593,6 +623,28 @@ h3.card-title {
     display: block;
 }
 
+.footer-contact-module h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #414852;
+    padding: 1rem 0 0.5rem;
+}
+
+.footer-contact-module ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer-contact-module a {
+    text-decoration: none;
+    color: #8B2D88;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 5px;
+    display: block;
+}
+
 .newsletter-section h4 {
     color: #414852;
     font-size: 22px;
@@ -782,6 +834,34 @@ h3.card-title {
     z-index: -1;
 }
 
+.get-touch-section::before {
+    content: '';
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-image: url('../images/get-touch-left-circle.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left top;
+    z-index: -1;
+}
+
+.get-touch-section::after {
+    content: '';
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    background-image: url('../images/get-touch-right-circle.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right top;
+    z-index: -1;
+}
+
 /* Contact Us Page */
 
 .contact-banner-section {
@@ -851,23 +931,51 @@ a.card-link {
     font-size: 20px;
 }
 
+.icon-block {
+    background: #F1E5FF;
+    border-radius: 10px;
+    border: 1px solid #EEA7EC;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icon-block img {
+    width: 70px;
+}
+
+.icon-block span {
+    font-size: 15px;
+    color: #8B2D88;
+    font-weight: bold;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
 @media only screen and (max-width: 1400px) and (min-width: 1026px) {
     .contact-details-card {
         padding: 2rem;
         width: 100%;
     }
+
+    .service-card h4{
+        min-height: 100px;
+    }
 }
 
 @media only screen and (max-width: 1025px) {
-    .contact-details-card{
+    .contact-details-card {
         padding: 2rem;
     }
 
-    a.card-link{
+    a.card-link {
         font-size: 15px;
     }
 
-    .contact-card-img img{
+    .contact-card-img img {
         height: 50px;
         width: 50px;
     }
@@ -903,6 +1011,7 @@ a.card-link {
 
     .service-card h4 {
         font-size: 22px;
+        min-height: 75px;
     }
 
     .service-card p {
@@ -955,6 +1064,17 @@ a.card-link {
 
 
 @media only screen and (max-width: 900px) {
+
+    .w-33,
+    .w-48 {
+        width: 48%;
+        margin-bottom: 1rem !important;
+    }
+
+    .w-48.mt-3 {
+        margin-top: 0 !important;
+    }
+
     h4.card-heading {
         font-size: 15px;
     }
@@ -1028,6 +1148,7 @@ a.card-link {
 
     .service-card h4 {
         font-size: 16px;
+        min-height: 60px;
     }
 
     .service-card p {
@@ -1106,7 +1227,11 @@ a.card-link {
 
 
 @media only screen and (max-width: 668px) {
-    .contact-details-card{
+    .w-33, .w-48 {
+        width: 100%;
+    }
+
+    .contact-details-card {
         margin-bottom: 2rem;
     }
 
@@ -1115,11 +1240,11 @@ a.card-link {
         width: 100%;
     }
 
-    .contact-card-img{
+    .contact-card-img {
         width: 10%;
     }
 
-    .contact-card-content{
+    .contact-card-content {
         width: 90%;
     }
 
@@ -1243,7 +1368,7 @@ a.card-link {
     }
 
     .panel-heading .nav li {
-        width: 30%;
+        width: 22%;
     }
 
     .tab-title {
