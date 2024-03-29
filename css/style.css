@@ -457,6 +457,7 @@ h3.card-title {
     border-radius: 50px;
     padding: 10px 30px;
     display: inline-block;
+    width: 80%;
 }
 
 .digi-exp-card {
