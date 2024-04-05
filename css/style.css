@@ -20,8 +20,12 @@
     color: #9F369C;
 }
 
+.dark-blue-bg {
+    background-color: #1D1945;
+}
+
 .pink-bg {
-    background-color: #8B2D88;
+    background-color: #430641;
 }
 
 .purple-bg {
@@ -320,7 +324,6 @@ h2.banner-heading-2 {
 }
 
 .narrative-card {
-    background-color: #1D1945;
     border-radius: 12px;
     color: #fff;
     padding: 0 1.5rem 1.5rem;
