@@ -16,6 +16,22 @@
     width: 49%;
 }
 
+.purple-text {
+    color: #9F369C;
+}
+
+.pink-bg {
+    background-color: #8B2D88;
+}
+
+.purple-bg {
+    background-color: #190039;
+}
+
+.blue-bg {
+    background-color: #071C54;
+}
+
 .navbar-brand {
     padding: 0;
     display: block;
@@ -299,7 +315,7 @@ h2.banner-heading-2 {
     display: block;
 }
 
-.narrative-slider{
+.narrative-slider {
     margin: 2rem 0;
 }
 
@@ -334,12 +350,17 @@ h2.banner-heading-2 {
     background-image: url('../images/narratives-2.png');
 }
 
-.narrative-card.third::before { 
+.narrative-card.third::before,
+.narrative-card.forth::before {
     background-image: url('../images/narratives-3.png');
     background-size: contain;
     background-position: top right;
     bottom: unset;
     top: 0;
+}
+
+.narrative-card.forth::before {
+    background-image: url('../images/narratives-4.png');
 }
 
 .card-category {
@@ -394,7 +415,8 @@ h3.card-title {
     margin-bottom: 2rem;
 }
 
-.narrative-slider .slick-prev, .narrative-slider .custom-arrow{
+.narrative-slider .slick-prev,
+.narrative-slider .custom-arrow {
     top: -70px;
     bottom: unset;
 }
@@ -500,7 +522,7 @@ h3.card-title {
 }
 
 .counter-digit {
-    font-size: 100px;
+    font-size: 64px;
     font-weight: bold;
     color: #4F489C;
     display: flex;
@@ -965,18 +987,26 @@ a.card-link {
     letter-spacing: 1px;
 }
 
+.digi-exp-icon {
+    left: -20px;
+}
+
 @media only screen and (max-width: 1400px) and (min-width: 1026px) {
     .contact-details-card {
         padding: 2rem;
         width: 100%;
     }
 
-    .service-card h4{
+    .service-card h4 {
         min-height: 100px;
     }
 }
 
 @media only screen and (max-width: 1025px) {
+    .card-category {
+        font-size: 13px;
+    }
+
     .contact-details-card {
         padding: 2rem;
     }
@@ -1053,7 +1083,12 @@ a.card-link {
     }
 
     .counter-digit {
-        font-size: 80px;
+        font-size: 55px;
+    }
+
+    .counter-title {
+        font-size: 12px;
+        width: 90%;
     }
 
     .cta-header {
@@ -1074,6 +1109,15 @@ a.card-link {
 
 
 @media only screen and (max-width: 900px) {
+    h2.banner-heading-2 {
+        font-size: 25px;
+        line-height: 44px;
+    }
+
+    .mar-stra-icon {
+        left: 0;
+    }
+
     .w-33,
     .w-48 {
         width: 48%;
@@ -1098,7 +1142,7 @@ a.card-link {
     }
 
     .blue-rounded-btn {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .mobile-toggle-menu {
@@ -1187,7 +1231,7 @@ a.card-link {
         font-size: 12px;
     }
 
-    .project-deliver-list{
+    .project-deliver-list {
         width: 100%;
     }
 
@@ -1240,7 +1284,9 @@ a.card-link {
 
 
 @media only screen and (max-width: 668px) {
-    .w-33, .w-48 {
+
+    .w-33,
+    .w-48 {
         width: 100%;
     }
 
@@ -1466,10 +1512,22 @@ a.card-link {
     .counter-digit {
         font-size: 60px;
     }
+
+    .digi-exp-icon {
+        left: -9px;
+    }
 }
 
 
 @media only screen and (max-width: 490px) {
+    .use-case-section {
+        padding: 3rem 0 0;
+    }
+
+    .con-module {
+        left: 9px;
+    }
+
     .newsletter-form {
         flex-wrap: wrap;
     }
@@ -1493,7 +1551,7 @@ a.card-link {
     }
 
     .slick-dots {
-        bottom: -40px;
+        bottom: -13px;
     }
 }
 
