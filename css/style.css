@@ -929,7 +929,7 @@ a.contact-btn.rounded-btn {
 }
 
 .contact-details-card {
-    background-color: #ECEBFA;
+    /* background-color: #ECEBFA; */
     padding: 3rem 4rem;
     border-radius: 24px;
     display: flex;
@@ -953,6 +953,50 @@ a.contact-btn.rounded-btn {
 .contact-card-content {
     width: 80%;
     padding-left: 1rem;
+}
+
+.new-contact-detail-module {
+    width: 70%;
+    margin: -230px auto 0;
+    border: 1px solid #877FE4;
+    background: #ffffffb8;
+    display: inline-block;
+    border-radius: 44px;
+}
+
+.new-contact-detail-module .heading,
+.new-contact-detail-module .subheading {
+    color: #270552 !important;
+}
+
+.new-contact-detail-module .subheading {
+    font-weight: 600;
+    padding-bottom: 0.7rem;
+}
+
+.new-contact-detail-module .contact-details-card {
+    padding: 2rem;
+    width: 70%;
+}
+
+.new-contact-detail-module .contact-card-content {
+    text-align: left;
+}
+
+
+.purple-underline {
+    position: relative;
+}
+
+.purple-underline::before {
+    content: '';
+    height: 5px;
+    width: 35%;
+    background: #D42CCE;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 h4.card-heading {
@@ -992,6 +1036,27 @@ a.card-link {
 
 .digi-exp-icon {
     left: -20px;
+}
+
+.bg-round-shape {
+    background-image: url('../images/contact-last-whilre-bg.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+}
+
+.custom-breadcrumb {
+    color: #E491E1;
+    font-size: 20px;
+    padding: 2rem 1rem 1.5rem;
+}
+
+.custom-breadcrumb a {
+    color: #8B2D88;
+    font-size: 20px;
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 1400px) and (min-width: 1026px) {
@@ -1045,6 +1110,10 @@ a.card-link {
 
     .heading span {
         font-size: 36px;
+    }
+
+    .new-contact-detail-module .heading span {
+        font-size: 30px;
     }
 
     .module-data h4 {
@@ -1112,6 +1181,10 @@ a.card-link {
 
 
 @media only screen and (max-width: 900px) {
+    .new-contact-detail-module {
+        width: 90%;
+    }
+
     h2.banner-heading-2 {
         font-size: 25px;
         line-height: 44px;
@@ -1368,6 +1441,16 @@ a.card-link {
         margin-bottom: 1.5rem;
     }
 
+    .new-contact-detail-module .heading span {
+        font-size: 15px;
+        line-height: normal;
+    }
+
+    .new-contact-detail-module .contact-details-card {
+        padding: 0rem 0;
+        width: 90%;
+    }
+
     .subheading {
         font-size: 18px;
     }
@@ -1519,10 +1602,26 @@ a.card-link {
     .digi-exp-icon {
         left: -9px;
     }
+
+    .new-contact-detail-module .heading,
+    .new-contact-detail-module .heading span {
+        line-height: 26px;
+        margin-bottom: 3rem;
+    }
 }
 
 
 @media only screen and (max-width: 490px) {
+    .card-link {
+        font-size: 13px;
+        word-wrap: break-word;
+    }
+
+    .new-contact-detail-module {
+        width: 90%;
+        margin-top: 2rem;
+    }
+
     .use-case-section {
         padding: 3rem 0 0;
     }
