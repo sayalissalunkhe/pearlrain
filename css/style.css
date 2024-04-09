@@ -1001,13 +1001,14 @@ a.contact-btn.rounded-btn {
 
 h4.card-heading {
     font-size: 20px;
-    color: #8B2D88;
+    color: #270552;
 }
 
 a.card-link {
-    color: #605FFC;
+    color: #270552;
     text-decoration: none;
     font-size: 20px;
+    font-weight: 800;
 }
 
 .icon-block {
